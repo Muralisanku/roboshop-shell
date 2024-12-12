@@ -15,6 +15,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then
         echo -e "$2 ... $R FAILED $N"
+        exit 1
     else
         echo -e "$2 ... $G SUCCESS $N"
     fi
@@ -86,7 +87,7 @@ dnf install mongodb-org-shell -y &>> $LOGFILE
 
 VALIDATE $? "Installing mongodb"
 
-mongo --host mongodb.joinaiops.online </app/schema/catalogue.js
+mongo --host mongodb.joinaiops.online </app/schema/catalogue.js &>> $LOGFILE
 
 VALIDATE $? "Loading Catalogue data into mongodb"
 
