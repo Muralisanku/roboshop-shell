@@ -40,7 +40,7 @@ VALIDATE $? "Enabling nginx services"
 
 systemctl start nginx &>> $LOGFILE
 
-VALIDATE $? "Enabling nginx services"
+VALIDATE $? "stating nginx services"
 
 rm -rf /usr/share/nginx/html/* &>> $LOGFILE
 
