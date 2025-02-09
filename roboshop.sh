@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AMI=ami-0b4f379183e5706b9 #this keeps on changing
-SG_ID=sg-0df145bae6f3b5cd4 #replace with your SG ID
+SG_ID=sgr-0b7fe030c8dfb6167 #replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
 ZONE_ID=Z09309513LRK469TW0NI2 # replace your zone ID
 DOMAIN_NAME="joinaiops.online"
