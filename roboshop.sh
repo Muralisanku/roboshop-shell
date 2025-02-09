@@ -1,10 +1,10 @@
 #!/bin/bash
 
-AMI=ami-0f3c7d07486cad139 #this keeps on changing
-SG_ID=sg-087e7afb3a936fce7 #replace with your SG ID
+AMI=ami-0b4f379183e5706b9 #this keeps on changing
+SG_ID=sg-0df145bae6f3b5cd4 #replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "web")
-ZONE_ID=Z104317737D96UJVA7NEF # replace your zone ID
-DOMAIN_NAME="daws76s.online"
+ZONE_ID=Z09309513LRK469TW0NI2 # replace your zone ID
+DOMAIN_NAME="joinaiops.online"
 
 for i in "${INSTANCES[@]}"
 do
