@@ -2,8 +2,8 @@
 Description = Cart Service
 [Service]
 User=roboshop
-Environment=REDIS_HOST=redis.joinaiops.online
-Environment=CATALOGUE_HOST=catalogue.joinaiops.online
+Environment=REDIS_HOST=redis.joinaiops.store
+Environment=CATALOGUE_HOST=catalogue.joinaiops.store
 Environment=CATALOGUE_PORT=8080
 ExecStart=/bin/node /app/server.js
 SyslogIdentifier=cart

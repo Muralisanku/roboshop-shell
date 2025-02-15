@@ -93,7 +93,7 @@ dnf install mongodb-org-shell -y &>> $LOGFILE
 
 VALIDATE $? "Installing mongodb"
 
-mongo --host mongodb.joinaiops.online </app/schema/user.js &>> $LOGFILE
+mongo --host mongodb.joinaiops.store </app/schema/user.js &>> $LOGFILE
 
 VALIDATE $? "Loading user data into mongodb"
 
